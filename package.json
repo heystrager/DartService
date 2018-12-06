@@ -23,6 +23,7 @@
     "imagemin-pngquant": "^5.0.1"
   },
   "dependencies": {
-    "@types/jquery": "^3.3.0"
+    "@types/jquery": "^3.3.0",
+    "gulp-jade": "^1.1.0"
   }
 }

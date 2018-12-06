@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
+    jade = require('gulp-jade'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglifyjs'),
@@ -11,10 +12,19 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer');
 
+gulp.task('jade', function(){
+  return gulp.src('app/jade/*.jade')
+  .pipe(jade({
+    locals: 'app/jade/**/*.jade'
+  }))
+  .pipe(gulp.dest('app'))
+});
 
 gulp.task('sass',function(){
-  return gulp.src('app/sass/*.sass')
-  .pipe(sass())
+  return gulp.src('app/scss/style.scss')
+  .pipe(sass({
+    locals: 'app/scss/**/*.scss'
+  }))
   .pipe(autoprefixer(['last 15 versions', '>1%', 'ie 8', 'ie 7'], {cascade: true}))
   .pipe(gulp.dest('app/css'))
   .pipe(browserSync.reload({stream: true}))
@@ -22,8 +32,7 @@ gulp.task('sass',function(){
 
 gulp.task('scripts', function(){
   return gulp.src([
-    'app/libs/jquery/dist/jquery.min.js',
-    'app/libs/magnific-popup/dist/jquery.magnific-popup.min',
+    'app/libs/jquery/dist/jquery.min.js'
   ])
   .pipe(concat('libs.min.js'))
   .pipe(uglify())
@@ -67,7 +76,8 @@ gulp.task('img', function(){
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs','scripts'], function(){
-  gulp.watch('app/sass/main.sass',['sass']);
+  gulp.watch('app/scss/**/*.scss',['sass']);
+  gulp.watch('app/jade/**/*.jade',['jade']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/*.js', browserSync.reload);
 });
