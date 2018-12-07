@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    jade = require('gulp-jade'),
+    pug = require('gulp-pug'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglifyjs'),
@@ -12,10 +12,10 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer');
 
-gulp.task('jade', function(){
-  return gulp.src('app/jade/*.jade')
-  .pipe(jade({
-    locals: 'app/jade/**/*.jade'
+gulp.task('pug', function(){
+  return gulp.src('app/pug/*.pug')
+  .pipe(pug({
+    locals: 'app/pug/**/*.pug'
   }))
   .pipe(gulp.dest('app'))
 });
@@ -77,7 +77,7 @@ gulp.task('img', function(){
 
 gulp.task('watch', ['browser-sync', 'css-libs','scripts'], function(){
   gulp.watch('app/scss/**/*.scss',['sass']);
-  gulp.watch('app/jade/**/*.jade',['jade']);
+  gulp.watch('app/pug/**/*.pug',['pug']);
   gulp.watch('app/*.html', browserSync.reload);
   gulp.watch('app/js/*.js', browserSync.reload);
 });

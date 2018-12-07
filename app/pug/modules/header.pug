@@ -1,0 +1,20 @@
+-
+  var navItems = [
+    {url: '#', title: "Home"},
+    {url: '#', title: "Service"},
+    {url: '#', title: "Extension"},
+    {url: '#', title: "Pricing"},
+    {url: '#', title: "Help"}
+  ]
+  
+header.header.block
+  .header__wrapper.block-wrapper
+    a.header__logo-link(href="#")
+      img.header__logo-img(src="img/logo.png" alt="logo")
+    .header__nav
+      ul.header__nav-list
+        each item in navItems
+          li.header__nav-item
+            a.header__nav-link(href=item.url)=item.title  
+    a.header__action(href="#")
+      span.header__action-text sign up
