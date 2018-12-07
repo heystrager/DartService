@@ -1,0 +1,14 @@
+-
+  var navItems = [
+    {url: '#', title: "Home"},
+    {url: '#', title: "Service"},
+    {url: '#', title: "Extension"},
+    {url: '#', title: "Pricing"},
+    {url: '#', title: "Help"}
+  ]
+
+.nav
+  ul.nav__list
+    each item in navItems
+      li.nav__item
+        a.nav__link(href=item.url)=item.title 
