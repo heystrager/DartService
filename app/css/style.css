@@ -556,7 +556,8 @@ template {
             box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); }
 
 .about__wrapper {
-  position: relative; }
+  position: relative;
+  margin-bottom: 100px; }
 
 .about__top {
   position: relative;
@@ -657,3 +658,72 @@ template {
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto; }
+
+.promo {
+  padding-left: 0;
+  padding-right: 0; }
+  .promo__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .promo__item {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+            flex: 0 1 25%;
+    max-width: 25%; }
+
+.promo-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  height: 150px; }
+  .promo-item__figure {
+    position: relative;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin-right: 24px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
+  .promo-item__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    pointer-events: none; }
+  .promo-item__title {
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 800; }
+
+.promo-item_blue {
+  background-color: #80d8ff; }
+
+.promo-item_dark-blue {
+  background-color: #82b1ff; }
+
+.promo-item_dark-pink {
+  background-color: #b388ff; }
+
+.promo-item_pink {
+  background-color: #ea80fc; }
