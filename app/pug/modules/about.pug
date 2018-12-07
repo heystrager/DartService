@@ -1,0 +1,26 @@
+-
+  var itemList = [
+    {imgUrl: 'img/about-item1.png', title: 'Title Goes Here', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    {imgUrl: 'img/about-item2.png', title: 'Title Goes Here', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+    {imgUrl: 'img/about-item3.png', title: 'Title Goes Here', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
+  ]
+
+.about.block
+  .about__wrapper.block-wrapper
+    .about__top
+      .about-top
+        .about-top__title Easy & Useful
+        .about-top__subtitle Project Management Tool
+        .about-top__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+    .about__bottom
+      .about-bottom
+        .about-bottom__list
+          each item in itemList
+            .about-bottom__item
+              img.about-bottom__item-img(src=item.imgUrl)
+              .about-bottom__item-title=item.title
+              .about-bottom__item-description=item.description
+        a.about-bottom__action(href="#")
+          span.about-bottom__action-text GET STARTED
+          
+        

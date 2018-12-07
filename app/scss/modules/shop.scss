@@ -1,6 +1,7 @@
 .shop {
   position: relative;
   padding-bottom: 187px;
+  margin-bottom: 92px;
   &__wrapper {
     display: flex;  
     justify-content: space-between;
@@ -71,6 +72,7 @@
     text-decoration: none;
     font-family: $font-extra;
     color: $color-dark-blue;
+    font-weight: 700;
     transition: all $transition-main;
     &:hover {
       color: $color-white;
