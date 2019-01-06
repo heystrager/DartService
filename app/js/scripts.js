@@ -1,9 +1,6 @@
 $( document ).ready(function() {
   $('.js-services-item').each((itemIndex, item) => {
-
     const $topSide = $(item).find('.js-services-item-top');
-    // const $bottomSide = $(item).find('.js-services-item-bottom');
-    // console.log($link, $bottomSide);
 
     $topSide.off('.topSide').on('click.topSide', function (event) {
       event.preventDefault();
@@ -20,4 +17,12 @@ $( document ).ready(function() {
       }
     });
   });
+  
+  $('.js-slide').lightSlider({
+    item:2,
+    vertical:true,
+    pager: false,
+    enableDrag: true
+  });
+
 });

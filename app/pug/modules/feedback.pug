@@ -1,0 +1,28 @@
+-
+  var feedbackList = [
+    {imgUrl: 'img/feedback-avatar1.png', title: 'John Doe', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'},
+    {imgUrl: 'img/feedback-avatar2.png', title: 'Khalessi', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'},
+    {imgUrl: 'img/feedback-avatar1.png', title: 'John Doe', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'},
+    {imgUrl: 'img/feedback-avatar2.png', title: 'Khalessi', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea'},
+  ]
+
+.feedback.block
+  .feedback__wrapper.block-wrapper
+    .feedback__background
+    .feedback__side
+      .feedback-side
+        .feedback-side__title What our customers have to say about us.
+        .feedback-side__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        a.feedback-side__action(href="#")
+          span.feedback-side__action-text GET STARTED
+    .feedback__main
+      .feedback-main
+        .feedback-main__list.js-slide
+          each feedback in feedbackList
+            .feedback-main__item
+              .feedback-main-item
+                .feedback-main-item__side
+                  img.feedback-main-item__side-img(src=feedback.imgUrl)
+                .feedback-main-item__main
+                  .feedback-main-item__main-title=feedback.title
+                  .feedback-main-item__main-description=feedback.description  

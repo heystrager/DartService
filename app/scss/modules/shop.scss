@@ -12,7 +12,6 @@
     bottom: 0;
     right: 0;
     left: 0;
-    width: 100%;
     background: url(../img/header-background.png) center center/cover no-repeat;
     &:before {
       content: '';
@@ -21,8 +20,7 @@
       bottom: 0;
       right: 0;
       left: 0;
-      width: 100%;
-      background: linear-gradient( 143deg, rgb(0,184,212) 0%, rgb(29,233,182) 100%);
+      background: linear-gradient( 143deg, rgb(29,233,182) 0%, rgb(0,184,212) 100%);
       opacity: 0.902;
     }
   }

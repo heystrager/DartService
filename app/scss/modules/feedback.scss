@@ -1,0 +1,122 @@
+.feedback {
+  position: relative;
+  &__wrapper {
+    display: flex;
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../img/feedback-background.png) center center/cover no-repeat;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: linear-gradient( 143deg, rgb(29,233,182) 0%, rgb(0,184,212) 100%);
+      opacity: 0.949;
+    }
+  }
+  &__main {
+    position: relative;
+    flex: 1 0 54%;
+    max-width: 54%;
+  }
+  &__side {
+    position: relative;
+    flex: 1 0 46%;
+    max-width: 46%;
+  }
+  &__main {
+    padding-top: 87px;
+  }
+  &__side {
+    padding-top: 128px;
+  }
+}
+.feedback-side {
+  font-family: $font-main;
+  color: $color-white;
+  &__title {
+    margin-bottom: 15px;
+    max-width: 460px;
+    font-weight: 500;
+    font-size: 45px;
+  }
+  &__description {
+    margin-bottom: 73px;
+    max-width: 520px;
+    font-size: $font-size-main;
+    line-height: 25px;
+  }
+  &__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    background-color: $color-dark-blue;
+    text-decoration: none;
+    font-family: $font-extra;
+    color: $color-white;
+    font-weight: 700;
+    transition: all $transition-main;
+    &:hover {
+      color: $color-dark-blue;
+      background-color: $color-white;
+    }
+  }
+  &__action-text {
+    flex: 0 1 auto;
+  }
+}
+.feedback-main {
+  position: relative;
+  &__item {
+    margin-bottom: 70px;
+  }
+  .lsAction {
+    position: absolute;
+    top: 0;
+  }
+}
+.feedback-main-item {
+  display: flex;
+  align-items: center;
+  padding-left: 9px;
+  &__side {
+    flex: 0 1 auto;
+    margin-right: 43px;
+    width: 76px;
+  }
+  &__side-img {
+    width: 76px;
+  }
+  &__main {
+    flex: 0 1 550px;
+    padding: 28px 70px 24px 30px;
+    max-width: 550px;
+    border-radius: 5px;
+    background-color: $color-white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    font-family: $font-main;
+  }
+  &__main-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 25px;
+    color: $color-dark-blue;
+    font-weight: 700
+  }
+  &__main-description {
+    font-size: $font-size-main;
+    line-height: 25px;
+    color: $color-dark-grey;
+  }
+}
