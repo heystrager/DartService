@@ -12,17 +12,20 @@ $( document ).ready(function() {
         $clickedBottomSide.removeClass('opened');
       }
       else {
-        $clickedBottomSide.slideDown('slow easeInElastic')
+        $clickedBottomSide.slideDown();
         $clickedBottomSide.addClass('opened');
       }
     });
   });
   
-  $('.js-slide').lightSlider({
+
+  var slider = $('.js-slide').lightSlider({
     item:2,
     vertical:true,
     pager: false,
-    enableDrag: true
+    enableDrag: true,
+    controls: false,
+    verticalHeight: 477
   });
 
 });

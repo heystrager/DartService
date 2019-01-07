@@ -79,11 +79,26 @@
 .feedback-main {
   position: relative;
   &__item {
-    margin-bottom: 70px;
+    
   }
-  .lsAction {
+  .slider-up,
+  .slider-down {
     position: absolute;
-    top: 0;
+    display: block;
+    z-index: 99;
+    width: 25px;
+    height: 25px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+  .slider-up {
+    background: url('../img/up-arrow.svg') center center/cover no-repeat;
+    top: -50px;
+  }
+  .slider-down {
+    background: url('../img/down-arrow.svg') center center/cover no-repeat;
+    bottom: -5%;
   }
 }
 .feedback-main-item {
