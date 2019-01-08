@@ -810,7 +810,8 @@ template {
     color: #061e37; }
 
 .feedback {
-  position: relative; }
+  position: relative;
+  margin-bottom: 92px; }
   .feedback__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -859,7 +860,7 @@ template {
   .feedback-side__title {
     margin-bottom: 15px;
     max-width: 460px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 45px; }
   .feedback-side__description {
     margin-bottom: 73px;
@@ -965,3 +966,96 @@ template {
     font-size: 15px;
     line-height: 25px;
     color: #78909c; }
+
+.boss__wrapper {
+  position: relative;
+  text-align: center;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+
+.boss__top {
+  margin: 0 auto 72px;
+  max-width: 560px; }
+
+.boss__top-title {
+  margin-bottom: 14px;
+  font-size: 45px;
+  font-weight: 600;
+  color: #061e37; }
+
+.boss__top-description {
+  font-size: 15px;
+  line-height: 25px;
+  color: #b0bec5; }
+
+.boss__bottom {
+  max-width: 650px;
+  margin: 0 auto; }
+
+.boss__bottom-avatar {
+  position: relative;
+  margin: 0 auto 36px;
+  width: 160px;
+  height: 160px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 20px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.35); }
+  .boss__bottom-avatar::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 160px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.8) inset;
+            box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.8) inset; }
+
+.boss__bottom-avatar-img {
+  pointer-events: none; }
+
+.boss__bottom-name {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #061e37;
+  font-weight: 700; }
+
+.boss__bottom-description {
+  margin-bottom: 25px;
+  font-size: 15px;
+  color: #b0bec5;
+  line-height: 25px; }
+
+.socials__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.socials__item {
+  display: block;
+  margin: 0 15px;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all .25s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .socials__item_fb {
+    background: url(../img/facebook.svg) center center/cover no-repeat; }
+    .socials__item_fb:hover {
+      background: url(../img/facebook-hv.svg) center center/cover no-repeat; }
+  .socials__item_tw {
+    background: url(../img/twitter.svg) center center/cover no-repeat; }
+    .socials__item_tw:hover {
+      background: url(../img/twitter-hv.svg) center center/cover no-repeat; }
+  .socials__item_ig {
+    background: url(../img/instagram.svg) center center/cover no-repeat; }
+    .socials__item_ig:hover {
+      background: url(../img/instagram-hv.svg) center center/cover no-repeat; }

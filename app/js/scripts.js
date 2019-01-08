@@ -18,14 +18,13 @@ $( document ).ready(function() {
     });
   });
   
-
   var slider = $('.js-slide').lightSlider({
     item:2,
     vertical:true,
     pager: false,
     enableDrag: true,
     controls: false,
-    verticalHeight: 477
+    verticalHeight: 477,
   });
 
 });

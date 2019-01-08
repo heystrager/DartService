@@ -1,5 +1,6 @@
 .feedback {
   position: relative;
+  margin-bottom: 92px;
   &__wrapper {
     display: flex;
   }
@@ -44,7 +45,7 @@
   &__title {
     margin-bottom: 15px;
     max-width: 460px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 45px;
   }
   &__description {

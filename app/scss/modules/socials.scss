@@ -1,0 +1,31 @@
+.socials {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    display: block;
+    margin: 0 15px;
+    width: 20px;
+    height: 20px;
+    transition: all $transition-main;
+    &_fb {
+      background: url(../img/facebook.svg) center center/cover no-repeat;
+      &:hover {
+        background: url(../img/facebook-hv.svg) center center/cover no-repeat;
+      }
+    }
+    &_tw {
+      background: url(../img/twitter.svg) center center/cover no-repeat;
+      &:hover {
+        background: url(../img/twitter-hv.svg) center center/cover no-repeat;
+      }
+    }
+    &_ig {
+      background: url(../img/instagram.svg) center center/cover no-repeat;
+      &:hover {
+        background: url(../img/instagram-hv.svg) center center/cover no-repeat;
+      }
+    }
+  }
+}
