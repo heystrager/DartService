@@ -1,0 +1,21 @@
+.contacts.block
+  .contacts__wrapper.block-wrapper
+    .contacts__background
+    .contacts__header
+      .contacts__header-title Contact Us
+      .contacts__header-description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    .contacts__form
+      form.contacts-form(action="#")
+        .contacts-form__row
+          input.contacts-form__text(type="text" placeholder="First Name" required) 
+          input.contacts-form__text(type="text" placeholder="Last Name" required)
+        .contacts-form__row
+          input.contacts-form__text(type="text" placeholder="Email" required) 
+          input.contacts-form__text.js-phone(type="text" placeholder="Phone" required)  
+        .contacts-form__row
+          textarea.contacts-form__message(name="comment" value="comment" placeholder="Message" required)
+        .contacts-form__row
+          .contacts-form__checkbox
+            input(type="checkbox" id="sub" name="sub") 
+            label(for="sub") subscribe to the newsletter
+          input.contacts-form__submit(type="submit" value="send")      

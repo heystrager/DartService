@@ -1,0 +1,95 @@
+.contacts {
+  position: relative;
+  &__wrapper {
+    max-width: 600px;
+    padding-bottom: 82px;
+    padding-top: 41px;
+  }
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fafafa;
+  }
+  &__header {
+    position: relative;
+    margin-bottom: 44px;
+    font-family: $font-main;
+    color: $color-dark-blue;
+    text-align: center;
+  }
+  &__header-title {
+    margin-bottom: 12px;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  &__header-description {
+    font-size: $font-size-main;
+    line-height: 25px;
+  }
+}
+.contacts-form {
+  position: relative;
+  font-family: $font-main;
+  color: $color-dark-blue;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    flex: 0 1 278px;
+    margin-bottom: 22px;
+    padding: 20px;
+    max-width: 278px;
+    height: 49px;
+    border-radius: 5px;
+    border: 1px solid $color-dark-blue;
+    font-size: 14px;
+  }
+  &__message {
+    flex: 0 1 100%;
+    margin-bottom: 22px;
+    padding: 17px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid $color-dark-blue;
+    max-width: 100%;
+    height: 148px;
+    font-size: 14px;
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    input {
+      margin-right: 9px;
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+    }
+    label {
+      font-size: 14px;
+      letter-spacing: 0.6px;
+    }
+  }
+  &__submit {
+    width: 130px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: $color-green;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 600;
+    transition: all $transition-main;
+    &:hover,
+    &:focus {
+      background-color: $color-dark-blue;
+    }
+  }
+}
