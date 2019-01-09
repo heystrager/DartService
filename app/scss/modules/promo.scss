@@ -11,6 +11,18 @@
   }
 }
 
+@media(max-width: 1000px) {
+  .promo {
+    margin-bottom: 80px;
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__item {
+      flex: 0 1 50%;
+      max-width: 50%;
+    }
+  }
+}
 .promo-item {
   display: flex;
   justify-content: center;

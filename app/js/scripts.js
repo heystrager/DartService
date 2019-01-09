@@ -25,6 +25,7 @@ $( document ).ready(function() {
     enableDrag: true,
     controls: false,
     verticalHeight: 477,
+    enableTouch: true,
   });
 
   $('.js-burger').each((i, el) => {
