@@ -38,5 +38,26 @@
   &__action-text {
     flex: 0 1 auto;
   }
+  .hamburger {
+  display: none;
+  }
 }
 
+@media (max-width: 1000px) {
+  .header {
+    &__nav {
+      position: absolute;
+      z-index: 100;
+      top: -40px;
+      left: 0;
+      right: 0;
+    }
+    .hamburger {
+      display: block;
+      position: relative;
+      z-index: 10000;
+      padding: 0;
+      outline: none;
+    }
+  }
+}

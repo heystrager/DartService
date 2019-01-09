@@ -27,4 +27,11 @@ $( document ).ready(function() {
     verticalHeight: 477,
   });
 
+  $('.js-burger').each((i, el) => {
+    $(el).off('menu').on('click.menu', function(event) {
+      $(el).toggleClass('is-active');
+      $('.js-menu').fadeToggle();
+    });
+  });
+
 });

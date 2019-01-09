@@ -18,3 +18,41 @@
     }
   }
 }
+
+.nav-mobile {
+  display: none;
+  background: linear-gradient( 143deg, rgb(29,233,182) 0%, rgb(0,184,212) 100%);
+  transition: height $transition-main;
+  box-shadow:0px 10px 23px 0px rgba(0,0,0,0.36);
+  &__list {
+    display: block;
+    padding-left: 0;
+    padding: 35px 0;
+    margin: 0;
+  }
+  &__item {
+    padding: 5px 0;
+    list-style: none;
+    text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 600;
+    transition: color $transition-main;
+    &:hover {
+      color: $color-dark-blue;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
+  .nav-mobile.is-active {
+    display: block;
+  }
+}
