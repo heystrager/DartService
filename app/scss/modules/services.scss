@@ -27,9 +27,17 @@
   }
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .services {
     margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services {
+    &__top-title {
+      font-size: 35px;
+    }
   }
 }
 .services-item {
@@ -77,3 +85,27 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .services-item {
+    &__side {
+      flex-basis: 200px;
+      max-width: 200px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .services-item {
+    &__bottom {
+      display: block;
+    }
+    &__side {
+      display: flex;
+      justify-content: center;
+      max-width: none;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

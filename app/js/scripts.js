@@ -26,6 +26,23 @@ $( document ).ready(function() {
     controls: false,
     verticalHeight: 477,
     enableTouch: true,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          item: 1,
+          verticalHeight: 280
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          item: 1,
+          verticalHeight: 350,
+          slideMargin: 20,
+        }
+      }
+    ]
   });
 
   $('.js-burger').each((i, el) => {

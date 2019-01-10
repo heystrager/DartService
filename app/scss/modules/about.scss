@@ -37,6 +37,15 @@
     line-height: 25px;
   }
 }
+
+@media (max-width: 500px) {
+  .about-top {
+    &__title {
+      font-size: 35px;
+    }
+  }
+}
+
 .about-bottom {
   &__list {
     display: flex;

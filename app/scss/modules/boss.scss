@@ -61,8 +61,16 @@
   }
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .boss {
     margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .boss {
+    &__top-title {
+      font-size: 35px;
+    }
   }
 }

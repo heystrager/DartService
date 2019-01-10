@@ -45,6 +45,7 @@
 
 @media (max-width: 1000px) {
   .header {
+    margin-bottom: 80px;
     &__nav {
       position: absolute;
       z-index: 100;
@@ -58,6 +59,14 @@
       z-index: 10000;
       padding: 0;
       outline: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__action {
+      display: none;
     }
   }
 }

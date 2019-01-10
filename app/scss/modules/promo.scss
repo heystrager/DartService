@@ -11,7 +11,7 @@
   }
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .promo {
     margin-bottom: 80px;
     &__list {
@@ -20,6 +20,15 @@
     &__item {
       flex: 0 1 50%;
       max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .promo {
+    &__item {
+      flex: 0 1 100%;
+      max-width: 100%;
     }
   }
 }

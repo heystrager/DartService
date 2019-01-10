@@ -30,6 +30,14 @@
     line-height: 25px;
   }
 }
+
+@media (max-width: 500px) {
+  .contacts {
+    &__header-title {
+      font-size: 35px;
+    }
+  }
+}
 .contacts-form {
   position: relative;
   font-family: $font-main;
@@ -90,6 +98,32 @@
     &:hover,
     &:focus {
       background-color: $color-dark-blue;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .contacts-form {
+    &__row {
+     flex-wrap: wrap;
+    }
+    &__text {
+      flex: 0 1 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .contacts-form {
+    &__checkbox {
+      flex-basis: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    &__submit {
+      margin: 0 auto;
     }
   }
 }
